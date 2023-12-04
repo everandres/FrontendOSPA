@@ -12,10 +12,10 @@ export const MiComponente = () => {
 
   return (
     <div>
-      {datos.slice(0, 2).map(({ _id, ESTACION, MUNICIPIO }) => (
+      {datos.slice(0, 1).map(({ _id, ESTACION, MUNICIPIO }) => (
         <div key={_id}>
-          <h1>{ESTACION}</h1>
-          <h1>{MUNICIPIO}</h1>
+          <h1>{ESTACION.toUpperCase()}</h1>
+          <h1>{MUNICIPIO.toUpperCase()}</h1>
         </div>
       ))}
     </div>
